@@ -16,27 +16,27 @@ File user_selection.py
 
 0.1) Download the Twitter "Spritzer" archive from the internet archive : "https://archive.org/details/twitterstream"
 
-0.2) Untar the files of the Twitter "Spritzer" archive. untar
+0.2) Untar the files of the Twitter "Spritzer" archive. untar()
 
-0.3) Unzip bz2 just the tweets related to a county for each month and put them on an other path in a json in the folder "json_light_users". unzip
+0.3) Unzip bz2 just the tweets related to a county for each month and put them on an other path in a json in the folder "json_light_users". unzip()
 
-0.4) Select a list of unique users from the "light" json files of the internet archive. select_user
+0.4) Select a list of unique users from the "light" json files of the internet archive. select_user()
 
-0.5) Obtain a list of users that in a cvs, filter them, if they exist, according to their activity and the selection criteria. save_user_archive_list
+0.5) Obtain a list of users that in a cvs, filter them, if they exist, according to their activity and the selection criteria. save_user_archive_list()
 
 File download_archive_json.py
 
-0.6) Check if the criteria of "Italianess" and of activity (tweeted in the last month) are still satisfied. Expecially if the consistency in the use of the languge is over the threshold.
-In that case save the users profile in a csv and the archive in a json. download_new_user
+0.6) Check if the criteria of "Italianess" (in the use case) and of activity (tweeted in the last month) are still satisfied. Expecially if the consistency in the use of the languge is over the threshold.
+In that case save the users profile in a csv and the archive in a json. download_new_user()
 
 ##################################################################################################################################################################################################
 Create archive
 
 PYTHON
 
-File dataset_management.py
+File dataset_management_json.py
 
-1.1) Once that the user selection is complete, at certain time intervals save the archive again without doing any check. download_archive_json
+1.1) Once that the user selection is complete, at certain time intervals save the archive again without doing any check. download_archive_json()
 
 BASH
 
@@ -54,7 +54,7 @@ PYTHON
 
 File download_archive_json.py
 
-1.5) Rename chunks according the time interval: the first and last id of the tweets contained in the chunk. rename_chunks
+1.5) Rename chunks according the time interval: the first and last id of the tweets contained in the chunk. rename_chunks()
 
 ##################################################################################################################################################################################################
 Analyze users behaviour
@@ -63,5 +63,5 @@ PYTHON
 
 File dataset_management.py
 
-2.1) Analyze users behaviour: tweets and retweets and tw and retweets per user per hour, per day of the week and per month. dataset_descriptive
+2.1) Analyze users behaviour: tweets and retweets and tw and retweets per user per hour, per day of the week and per month. dataset_descriptive()
 
