@@ -65,3 +65,5 @@ File dataset_management.py
 
 2.1) Analyze users behaviour: tweets and retweets and tw and retweets per user per hour, per day of the week and per month. dataset_descriptive()
 
+Note: some of the code functions have been inspired by https://github.com/trifle/twitterresearch
+
