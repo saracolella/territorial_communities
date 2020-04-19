@@ -6,7 +6,9 @@ The draft of the journal paper on the matter is available in this folder as well
 
 Instructions to select a list of Twitter users that are part of the territorial community of a certain nation, obtain their archive and analyze their behaviour.
 
-########################################################################################################################################Select users
+########################################################################################################################################
+##########################################################
+Select users
 
 PYTHON
 
