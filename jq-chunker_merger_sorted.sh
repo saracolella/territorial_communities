@@ -36,12 +36,14 @@ split -d --suffix-length=4 \
 
 
 # DESCRIPTION:
-# OMerge and sort the chunks of all the zipped csv files such to have an ordered, unique and complete archive with chunks that fit into memory 
+# Merge and sort the chunks of all the zipped csv files such to have an ordered, unique and complete archive with chunks that fit into memory 
 
 # On BASH run:
+# to convert file to Unix format
+# dos2unix jq-chunker_merger_sorted.sh
 # to see which files we are merging, sorting and chunking:
-# echo /mnt/f/sara_italian_control/merged_sorted_chunks/*.csv.gz
+# echo /*.csv.gz
 # to make executable this file:
 # chmod +x jq-chunker_merger_sorted.sh
 # # to sort, merge and chunk all the ziipes csv files in the folder
-# ./jq-chunker_merger_sorted.sh 5000000  /mnt/f/sara_italian_control/merged_sorted_chunks/*.csv.gz
+# ./jq-chunker_merger_sorted.sh 5000000 *.csv.gz
