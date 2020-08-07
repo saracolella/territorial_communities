@@ -60,9 +60,11 @@ split -d --suffix-length=4 \
 # Obtain from the archive in json format just the fields of interest of each tweet of the archive and save them in csv files dividing them in chunks 
 
 # On BASH run:
+# to convert file to Unix format
+# dos2unix jq-chunker.sh
 # to see which files we are chunking:
-# echo /mnt/f/sara_italian_control/*.json.gz
+# echo *.json.gz
 # to make executable this file:
-# chmod +x jq-chunker_csv_no_filter.sh
+# chmod +x jq-chunker.sh
 # # to chunk all the json files in the folder
-# ./jq-chunker_csv.sh 5000000  /mnt/f/sara_italian_control/*.json.gz
+# ./jq-chunker.sh 5000000 *.json.gz
